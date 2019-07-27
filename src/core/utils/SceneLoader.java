@@ -74,8 +74,9 @@ public class SceneLoader {
 			}
 			for (GameObject o : loadedObjects) {
 				game.addObject(o);
-				loadedObjects.remove(o);
+				
 			}
+			loadedObjects.clear();
 			finished = false;
 		}
 	}
